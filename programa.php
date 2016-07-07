@@ -1,4 +1,5 @@
 <?php
+
 // exibe o weekday e dia/mês/ano
 echo "Hoje é " . date(l) . " dia " . date('d/m/y') . '<br />';
 
@@ -7,3 +8,6 @@ echo " agora são " . date('h:i:s A') . '<br />';
 
 // exemplo: hoje é quarta feira e faltam 3 dias para sábado
 echo "Hoje é " . date(l) . ", faltam três dias para " . date('l', strtotime("+3 days")) . '<br />';
+
+// exibe o nome do mês atual
+echo 'Estamos no mês de ' . date(F) . '<br />';
